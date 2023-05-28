@@ -1,0 +1,326 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Augusto Domingos</title>
+    <link rel="icon" href="{% static 'images/icon/GD_ICON_TELA.ico' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
+    <script src="{% static 'js/all.min.6.1.1.js' %}"></script>
+    <script src="{% static 'js/jquery-3.6.0.min.js' %}"></script>
+    <script src="{% static 'js/typed.min.js' %}"></script>
+   
+</head>
+<body>
+    <div class="scroll-up-btn">
+        <i class="fas fa-angle-up"></i>
+    </div>
+    <nav class="navbar" role="navigation">
+        <div class="max-width">
+            <div class="logo"><a href="#">Portfo<span>lio</span></a> </div>
+            <ul class="menu">
+                <li><a class="menu-link" href="#home">Início</a></li>
+                <li><a class="menu-link" href="#about">Sobre</a></li>
+                <li><a class="menu-link" href="#services">Projetos</a></li>
+                <li><a class="menu-link" href="#skills">Skills</a></li>
+                <li><a class="menu-link" href="#contact">Contacto</a></li>
+            </ul>
+            <div class="menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- seção da página inicial -->
+    <section class="home" id="home">
+        <div class="max-width">
+            <div class="home-content">
+                <div class="text-1">Olá, o meu nome é</div>
+                <div class="text-2">Augusto Domingos</div>
+                <div class="text-3">E eu sou um <span class="typing"></span></div>
+                <a href="https://drive.google.com/file/d/1XFodEazThHuDEKrheZ5MM0RnPKuM9r_n/view?usp=sharing" target="_blank">Meu CV</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- seção sobre mim -->
+    <section class="about" id="about">
+        <div class="max-width">
+            <h2 class="title">Sobre mim</h2>
+                
+            <div class="about-content">
+                <div class="column left">
+                    <img src="{% static 'images/profile-1.jpg' %}" alt="">
+
+                </div>
+                <div class="column right">
+                    <div class="text">Augusto Gundana Domingos</div>
+                    <p>Olá, eu tenho 18 anos e sou um jovem apaixonado por tecnologia e criação. Com mais de 3 anos de experiência em desenvolvimento web, design gráfico e edição de vídeo, estou constantemente em busca de novas oportunidades para expandir minhas habilidades e crescer profissionalmente.
+
+Além disso, sou fundador do canal Aghasty GD Productions, onde disponibilizo edições de vídeos musicais e AMVs. Com habilidades em marketing e copywriting, eu sou capaz de criar conteúdos cativantes e eficazes para as mídias sociais, sites e blogs.
+
+Estou sempre procurando por desafios criativos e emocionantes na área de tecnologia, onde eu possa utilizar minhas habilidades para contribuir com projetos inovadores e criativos. Se você estiver procurando por alguém comprometido e apaixonado por tecnologia e criação, não hesite em entrar em contato comigo. Estou ansioso para trabalhar com você!.</p>
+                    <a href="#contact">Entre em Contacto</a> 
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- seção meus serviços -->
+    <section class="services" id="services">
+        <div class="max-width">
+            <h2 class="title">Meus Projetos</h2>
+            <div class="serv-content">
+                <div class="card">
+                    <div class="box">
+                      <a href="{% url 'formulario:projetos_python' %}" target="_blank"> <img src="{% static 'images/icon/python.svg' %}"></a>
+                    </div>
+                    <a class="acor" href="{% url 'formulario:projetos_python' %}" target="_blank">
+                    <div class="text">Projetos com Python</div></a>
+                    <a class="acor" href="{% url 'formulario:projetos_python' %}" target="_blank">
+                    <p class="para"> Confira os projetos que desenvolvi com Python, incluindo um sistema de CRUD, player de música, jogos, downloader de vídeos e muito mais. Descubra como essa linguagem de programação versátil pode ser utilizada em uma ampla gama de projetos emocionantes.
+                    </p>
+                    <p class="para">Tenha uma boa experiência!</p></a>                   
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <a href="{% url 'formulario:projetos_designer' %}" target="_blank"> <img src="{% static 'images/icon/video.svg' %}"></a>
+                    </div>
+                    <a class = "acor"href="{% url 'formulario:projetos_designer' %}" target="_blank">
+                    <div class="text">Edição de Vídeos e Fotos</div></a>
+                    <a class = "acor"href="{% url 'formulario:projetos_designer' %}" target="_blank"><p class="para"> Com ampla experiência na edição de vídeos e fotos, tanto em dispositivos móveis quanto em computadores, transformei essa área em meu hobby. Tenho um grande interesse em editar vídeos de diferentes tipos, incluindo lyrics vídeos, AMVs, vídeos musicais e também criar banners, logotipos e outras atividades relacionadas
+                        </p></a>                      
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <a href="https://aghastygdproductions.ml/" target="_blank"> <img src="{% static 'images/icon/GD_ICON_TELA.ico' %}"></a>
+                    </div>
+                    <a class="acor" href="https://aghastygdproductions.ml/" target="_blank">
+                    <div class="text">Site de Download</div></a>
+                    <a class="acor" href="https://aghastygdproductions.ml/" target="_blank"><p class="para">Este foi um dos meus primeiros projetos, quando comecei a trabalhar com criação de sites usando o Blogger. Desde então, tenho aprimorado minhas habilidades e aprendi a trabalhar com Wordpress. Atualmente, sou capaz de criar sites dinâmicos e integrá-los com APIs, como a do IMDB, para exibir informações sobre filmes e séries, com links para download ou streaming.
+                        </p></a>                      
+                </div>
+                
+                <div class="card">
+                    <div class="box">
+                        <a href="{% url 'formulario:projetos_web' %}" target="_blank"><img src="{% static 'images/icon/html.svg' %}"></a>
+                        <a href="{% url 'formulario:projetos_web' %}" target="_blank"><img src="{% static 'images/icon/css.svg' %}"></a>
+                        <a href="{% url 'formulario:projetos_web' %}" target="_blank"><img src="{% static 'images/icon/javascript.svg' %}"></a>
+                    </div>
+                    <a class="acor" href="{% url 'formulario:projetos_web' %}" target="_blank">
+                    <div class="text">Projetos com HTML, CSS e JS</div></a>
+                    <a class="acor" href="{% url 'formulario:projetos_web' %}" target="_blank"><p class="para">Dê uma olhada nos sites que desenvolvi, incluindo sites estáticos, dinâmicos, landing pages e responsivos. Criei cada um deles com HTML e CSS puro, acrescentando algumas animações e processamento de formulários com Javascript. Tenho certeza que irá gostar do resultado :)
+                        </p></a>                      
+                </div>
+
+                <div class="card">
+                    <div class="box">
+                        <a href="#services"><img src="{% static 'images/icon/django.svg' %}"></a>
+                    </div>
+                    <a class="acor" href="#services">
+                    <div class="text">Projetos com Django</div></a>
+                    <a class="acor" href="#services"><p class="para"> O Django é um dos frameworks mais populares para o desenvolvimento web em Python. Com ele, é possível criar sites dinâmicos, validar formulários, fazer requisições de APIs e muito mais. Recentemente, tenho me dedicado bastante ao estudo e uso desse framework, e como resultado, desenvolvi projetos interessantes que espero que você confira!
+                        </p></a>                      
+                    </div>
+                    <div class="card">
+                        <div class="box">
+                            <a href="#services"><img src="{% static 'images/icon/react.svg' %}"></a>
+                            <a href="#services"><img src="{% static 'images/icon/vue.svg' %}"></a>
+                            <a href="#services"><img src="{% static 'images/icon/nodejs.svg' %}"></a> 
+                        </div>
+                        <a class="acor" href="#services">
+                        <div class="text">Projetos com Frameworks JS</div></a>
+                        <a class="acor" href="#services"><p class="para">Apresentação das minhas aplicações desenvolvidas usando o React, React Native, NodeJs e VueJs. 
+                            Tem muitos projetos interessantes que acredito valer muito apena você conferir. Espero realmente que tu encontre o que tá procurando :) 
+                            </p></a>                      
+                        </div>
+            
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Competências-->
+    <section class="skills" id="skills">
+        <div class="max-width">
+            <h2 class="title">Minhas Competências</h2>
+            <div class="skills-content">
+                <div class="column left">
+                    <div class="text">Cursos</div>
+                    <div class="forma">Eu ainda não possuo nenhuma formação acadêmica, apenas terminei o ensino médio recentemente 
+                        e fiquei fazendo alguns cursos para obter mais conhecimento na Tecnologia de Informação. Os cursos realizados estão logo abaixo: </div>
+                    <li class="text2">Curso de Informática | Monte Sinai</li>
+                    <li class="text2">Curso de HTML, CSS e JavaScript | Caelum</p>
+                    <li class="text2">Curso de Lógica da Programação | Digital Inovation One</p>
+                    <li class="text2">Curso de Python | Curso em Video</p>
+                    <li class="text2">Curso de Python - Básico ao Avançado | Udemy</p>
+                    <li class="text2">Curso de Javascript - Básico ao Avançado | Geek University</p>
+                    <li class="text2">Curso de Git e Github | Digital Inovation One</p>
+                    <li class="text2">Curso de Análise de Dados - O'REILLY</li>
+                    <li class="text2">Curso de Edição de Vídeo (Filmora e Camtasia Studio)</li>
+                    <li class="text2">Curso de Marketing Digital | Curso em Vídeo</li>
+
+                    <a href="https://github.com/AghastyGD" target="_blank">Meu Github</a>
+                </div>
+                <div class="column right">
+                    <div class="bars">
+                        <div class="info">
+                            <span>Python</span>
+                     <!--       <span>1 ano</span> -->
+                        </div>
+                        <div class="line python"></div>
+                    </div>
+                    <div class="bars">
+                        <div class="info">
+                            <span>HTML</span>
+                    <!--        <span>2 ano</span> -->
+                        </div>
+                        <div class="line html"></div>
+                    </div>
+                    <div class="bars">
+                        <div class="info">
+                            <span>CSS</span>
+                    <!--        <span>2 ano</span> -->
+                        </div>
+                        <div class="line css"></div>
+                    </div>
+                    <div class="bars">
+                        <div class="info">
+                            <span>JavaScript</span>
+                       <!--     <span>1 ano</span> -->
+                        </div>
+                        <div class="line js"></div>
+                    </div>
+                    <div class="bars">
+                        <div class="info">
+                            <span>MySQL</span>
+                       <!-- <span>1 ano</span> -->
+                        </div>
+                        <div class="line mysql"></div>
+                    </div>
+                    <div class="bars">
+                        <div class = "info">
+                            <span>Django Framework</span>
+                        </div>
+                        <div class="line django"></div>      
+                    </div>
+                    <div class="bars">
+                        <div class="info">
+                            <span>Wordpress</span>
+                       <!-- <span>3 anos</span> -->
+                        </div>
+                        <div class="line wordpress"></div>
+                    </div>   
+                    <div class="bars">
+                        <div class="info">
+                            <span>Wondershare Filmora</span>
+                       <!-- <span>4 anos</span> -->
+                        </div>
+                        <div class="line filmora"></div>
+                    </div>
+                    <div class="bars">
+                        <div class="info">
+                            <span>Photoshop</span>
+                       <!--     <span>4 anos</span> -->
+                        </div>
+                        <div class="line photoshop"></div>
+                    </div>
+                    <div class="bars">
+                        <div class="info">
+                            <span>After Effects</span>
+                     <!--       <span>4 anos</span> -->
+                        </div>
+                        <div class="line effects"></div>
+                    </div>
+                    <div class="bars">
+                        <div class="info">
+                            <span>Blogger</span>
+                      <!--      <span>5 anos</span> -->
+                        </div>
+                        <div class="line blogger"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seccão do contacto -->
+    <section class="contact" id="contact">
+        <div class="max-width">
+            <h2 class="title">Contacte-me</h2>
+            <div class="contact-content">
+                <div class="column left">
+                    <div class="text">Fale comigo</div>
+                    <p>Você pode enviar uma mensagem pra mim directamente do formulário que se segue, ou pode me contactar usando as redes sociais logo abaixo.</p>
+                    <div class="icons">
+                        <div class="row">
+                            <i class="pintar"><i class="fas fa-user"></i></i>
+                            <div class="info">
+                                <div class="head">Nome</div>
+                                <div class="sub-title">Augusto Domingos</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <i class="pintar"><i class="fas fa-map-marker-alt"></i></i>
+                            <div class="info">
+                                <div class="head">Endereço</div>
+                                <div class="sub-title">Beira, Sofala, Moçambique</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <i class="pintar"><i class="fas fa-envelope"></i></i>
+                            <div class="info">
+                                <div class="head">E-Mail</div>
+                                <div class="sub-title">augustodomingosvasco@gmail.com</div>
+                            </div>
+                        </div>        
+                    </div>
+                </div>
+                <div class="column right">
+                    <div class="text">Envie uma mensagem</div>
+                  <form action="{% url 'formulario:enviar_mensagem' %}" method="post">
+  {% csrf_token %}
+  <div class="fields">
+    <div class="field name">
+      <input type="text" placeholder="Nome" name="nome" required> 
+    </div>
+    <div class="field email">
+      <input type="email" placeholder="E-Mail" name="email" required>
+    </div>
+  </div>
+  <div class="field">
+    <input type="text" placeholder="Assunto" name="assunto" required>
+  </div>
+  <div class="field textarea">
+    <textarea cols="30" rows="10" placeholder="Descreva o projeto..." name="mensagem" required></textarea>
+  </div>
+  <div class="button">
+    <button type="submit">Enviar mensagem</button>
+  </div>   
+</form>
+
+                </div>
+            </div>         
+        </div>
+    </section>
+    <!-- Seccão rodapé-->
+    <footer>
+        <p class="rede">Minhas Redes Sociais</p>
+        <div class="social">
+            <a href="https://web.facebook.com/augusto.domingos.549" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.linkedin.com/in/augusto-domingos-31801519a/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/AghastyGD" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+        </footer>
+        <footer>
+        <span>Criado por <a href="https://augustodomingos.netlify.app/">Augusto Domingos</a> | <span class="far fa-copyright"></span> 2022 Todos os direitos reservados.</span>
+    </footer>
+  
+
+    <script src="{% static 'script.js' %}"></script>
+  
+</body>
+</html> 

@@ -1,0 +1,64 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projetos Páginas Web | Augusto Domingos</title>
+    <link rel="icon" href="{% static 'images/icon/GD_ICON_TELA.ico' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/sobre.css' %}">
+    <script src="{% static 'js/all.min.6.1.1.js' %}"></script>
+    <script src="{% static 'js/jquery-3.6.0.min.js' %}"></script>
+    <script src="{% static 'js/typed.min.js' %}"></script>
+   
+</head>
+<body>
+    <div class="scroll-up-btn">
+        <i class="fas fa-angle-up"></i>
+    </div>
+    <nav class="navbar">
+        <div class="max-width">
+            <div class="logo"><a href="{% url 'formulario:enviar_mensagem' %}">Proje<span>tos</span></a> </div>
+            <ul class="menu">
+                <li><a href="index.html#home">Início</a></li>
+                <li><a href="index.html#about">Sobre</a></li>
+                <li><a href="index.html#services">Projetos</a></li>
+                <li><a href="index.html#skills">Skills</a></li>
+                <li><a href="index.html#contact">Contacto</a></li>
+            </ul>
+            <div class="menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- seção da página inicial -->
+    <section class="about" id="about">
+        <div class="max-width">
+            <h2 class="title">Formulário de Login Responsivo - HTML, CSS e JavaScript</h2>
+                
+            <div class="about-content">
+                <div class="column left">
+                    <img src="{% static 'images/projetos/projetoweb_001.png' %}" alt="">
+
+                </div>
+                <div class="column right">
+                    <div class="text">Introdução</div>
+                    <p class="p1">Uma página de formulário de login simples e responsiva, desenvolvida usando o HTML, CSS e Javascript. Abaixo eu deixei o repositório
+                        do Github e a página web online para uma demonstração rápida!</p>
+        
+                    <h2 class="text2">Demonstração da Página</h2>
+                    <p class="p1"><a class='a1' href="https://aghastygd.github.io/formulario-de-login/" target = "_blank"> Abrir a Página Web</a>
+                </div>                   
+                </div>
+            </div>
+        </div>
+        
+    </section>
+
+<footer>
+<span>Criado por <a href="https://augustodomingos.netlify.app/">Augusto Domingos</a> | <span class="far fa-copyright"></span> 2022 Todos os direitos reservados.</span>
+</footer>
+    <script src="{% static 'script.js' %}"></script>
+</body>

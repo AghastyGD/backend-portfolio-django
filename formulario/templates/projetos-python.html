@@ -1,0 +1,140 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projetos Python | Augusto Domingos</title>
+    <link rel="icon" href="{% static 'images/icon/GD_ICON_TELA.ico' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/sobre.css' %}">
+    <script src="{% static 'js/all.min.6.1.1.js' %}"></script>
+    <script src="{% static 'js/jquery-3.6.0.min.js' %}"></script>
+    <script src="{% static 'js/typed.min.js' %}"></script>
+   
+</head>
+<body>
+    <div class="scroll-up-btn">
+        <i class="fas fa-angle-up"></i>
+    </div>
+    <nav class="navbar">
+        <div class="max-width">
+            <div class="logo"><a href="{% url 'formulario:enviar_mensagem' %}">Proje<span>tos</span></a> </div>
+            <ul class="menu">
+                <li><a href="index.html#home">Início</a></li>
+                <li><a href="index.html#about">Sobre</a></li>
+                <li><a href="index.html#services">Projetos</a></li>
+                <li><a href="index.html#skills">Skills</a></li>
+                <li><a href="index.html#contact">Contacto</a></li>
+            </ul>
+            <div class="menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- seção da página inicial -->
+    <section class="about" id="about">
+        <div class="max-width">
+            <h2 class="title">Sistema de CRUD - Tkinter + SQLite</h2>
+                
+            <div class="about-content">
+                <div class="column left">
+                    <img src="{% static 'images/projetos/projetopy_001.PNG' %}" alt="">
+
+                </div>
+                <div class="column right">
+                    <div class="text">Introdução</div>
+                    <p>Um sistema para gestão de clientes, funcionários, ou estudantes com uma interface super amigável. Usando o Python com a biblioteca SQLite para banco de dados e Tkinter como interface gráfica.</p>
+                    <h2 class="text2">Funcionamento do Sistema</h2>
+                    <p>Facilite o cadastro e gerenciamento de usuários, este sistema tem a possiblidade de adicionar, atualizar, consultar e remover dados. Os usuários cadastrados, poderão fazer o login em sua conta e acessar algumas ferramentas úteis para
+                        o seu dia-a-dia de trabalho. Desenvolvi um menu de opções para facilitar a escolha dos serviços disponíveis. Entre os serviços estão: Cálculo de Média, Medidor, Jogo da Velha, Tabuada e muitas outras opcões que vale muito apena conferir.         
+                    </p>
+                    <h2 class="text2">Demonstração do Sistema</h2>
+                    <p><a href="https://github.com/AghastyGD/Sistema-de-CRUD-Tkinter-SQLite" target = "_blank" >Abrir o Repositório</a>
+                </div>                   
+                </div>
+            </div>
+        </div>
+        
+    </section>
+    
+    <section class="about2" id="about2">
+        <div class="max-width">
+            <h2 class="title">Tic Tac Toe (Jogo da Velha) - Tkinter + Numpy</h2>
+                
+            <div class="about2-content2">
+                <div class="column left">
+                    <img src="{% static 'images/projetos/projetopy_002.PNG' %}" alt="">
+
+                </div>
+                <div class="column right">
+                    <div class="text">Introdução</div>
+                    <p class="p1">Este é um Jogo da Velha feito em Python para você jogar com o seu amigo. Desenvolvi utilizando o Tkinter Bootstrap como Interface Gráfica e Numpy para a lógica do jogo.</p>
+                    <h2 class="text2">Jogabilidade</h2>
+                    <p class="p1">Modo de Jogo: Player 1 vs Player 2</p>
+
+                    <p class="p1"> Controles: Botão Direito do Mouse</p>
+                        
+                    <p class="p1">Regras do Jogos: É um jogo de regras extremamente simples, que não traz grandes dificuldades para seus jogadores e é facilmente aprendido.
+                    </p>
+                    <h2 class="text2">Demonstração do Jogo</h2>
+                    <p class="p1"> <a class="a1" href="https://github.com/AghastyGD/Tic-Tac-Toe-Jogo-da-Velha-GUI-Tkinter" target="_blank" >Abrir o Repositório</a>
+                </div>                 
+                </div>
+            </div>
+        </div>
+        
+    </section>
+    
+    <section class="about3" id="about3">
+        <div class="max-width">
+            <h2 class="title">GDPlayer (Reprodutor de Música) - Tkinter + PyGame</h2>
+                
+            <div class="about3-content3">
+                <div class="column left">
+                    <img src="{% static 'images/projetos/projetopy_003.PNG' %}" alt="">
+
+                </div>
+                <div class="column right">
+                    <div class="text">Introdução</div>
+                    <p class="p1">Um Reprodutor de Músicas simples usando o Python e com uma interface super amigável para trazer boa experiência ao usuário.</p>
+                    <h2 class="text2">Demonstração do Reprodutor</h2>
+                    <p class="p1"><a class="a1" href="https://github.com/AghastyGD/GDPlayer-Reprodutor-de-Musica-Tkinter" target = "_blank" >Abrir o Repositório</a>
+                </div>                   
+                </div>
+            </div>
+        </div>
+        
+    </section>
+
+    <section class="about4" id="about4">
+        <div class="max-width">
+            <h2 class="title">App para Cotação de Moedas Cripto - Kivy</h2>
+                
+            <div class="about4-content4">
+                <div class="column left">
+                    <img src="{% static 'images/projetos/projetopy_004.PNG' %}" alt="">
+
+                </div>
+                <div class="column right">
+                    <div class="text">Introdução</div>
+                    <p class="p1"> Uma aplicação em Kivy que acessa o serviço fornecido por uma  API externa que fornece a cotação em dólar, de uma criptomoeda.
+                        Utlizei a API fornecida pela coincap, por ela ser simples e não exigir chave para o acesso.  O aplicativo pode ser, posteriormente, instalado em um celular.
+                        </p>
+                    <h2 class="text2">Demonstração da Aplicação</h2>
+                    <p class="p1"><a class="a1" href="https://github.com/AghastyGD/cotacao_de_cripto_moeda" target = "_blank" >Abrir o Repositório</a>
+                </div>                   
+                </div>
+            </div>
+        </div>
+        
+    </section>
+    
+</footer>
+<footer>
+<span>Criado por <a href="https://augustodomingos.netlify.app/">Augusto Domingos</a> | <span class="far fa-copyright"></span> 2022 Todos os direitos reservados.</span>
+</footer>
+    <script src="{% static 'script.js' %}"></script>
+</body>
+</html>
