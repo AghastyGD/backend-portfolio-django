@@ -25,3 +25,6 @@ def projetos_designer(request):
   
 def projetos_web(request):
   return render(request, 'projetos-html-css-javascript.html')
+
+def projetos_django(request):
+  return render(request, 'projetos-django.html')
