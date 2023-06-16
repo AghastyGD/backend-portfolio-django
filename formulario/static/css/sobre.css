@@ -186,6 +186,32 @@ section .title::after{
     background: #fff;
     transform: translateX(-50%);
 }
+
+/* Mwsnagem Enviada Estilo */
+.container {
+      margin: 100px auto;
+      max-width: 500px;
+      padding: 20px;
+      background-color: #ffffff;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    
+    h1 {
+      color: #333333;
+      margin-bottom: 10px;
+    }
+    
+    p {
+      color: #666666;
+      margin-bottom: 20px;
+    }
+    
+    a {
+      color: #0066cc;
+      text-decoration: none;
+    }
+
 /* estilizando Projeto 001 */
 .about {
     color: #fff;
