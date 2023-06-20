@@ -1,13 +1,15 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
 }
-.html{
+
+.html {
     scroll-behavior: smooth;
 }
-.max-width{
+
+.max-width {
     max-width: 1300px;
     padding: 0 80px;
     margin: auto;
@@ -22,53 +24,63 @@
     font-family: "Ubuntu", sans-serif;
     transition: all 0.3s ease;
 }
-.navbar.sticky{
+
+.navbar.sticky {
     padding: 15px 0;
     background: crimson;
 }
-.navbar .max-width{
+
+.navbar .max-width {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.navbar .logo a{
+
+.navbar .logo a {
     color: #fff;
     font-size: 35px;
     font-weight: 600;
 }
-.navbar .logo a span{
+
+.navbar .logo a span {
     color: crimson;
     transition: all 0.3s ease;
 }
-.navbar.navbar.sticky .logo a span{
+
+.navbar.navbar.sticky .logo a span {
     color: #fff;
 }
-.navbar .menu li{
+
+.navbar .menu li {
     list-style: none;
     display: inline-block;
 }
-.navbar .menu li a{
+
+.navbar .menu li a {
     color: #fff;
     font-size: 18px;
     font-weight: 500;
     margin-left: 25px;
     transition: color 0.3s ease;
 }
-.navbar .menu li a:hover{
+
+.navbar .menu li a:hover {
     color: crimson;
 }
-.navbar.navbar.sticky .menu li a:hover{
+
+.navbar.navbar.sticky .menu li a:hover {
     color: #fff;
 }
 
 /* estilizando botao do menu */
-.menu-btn{
+.menu-btn {
     color: #fff;
     font-size: 23px;
     cursor: pointer;
     display: none;
 }
-.scroll-up-btn{
+
+.scroll-up-btn {
     position: fixed;
     height: 45px;
     width: 42px;
@@ -86,7 +98,8 @@
     pointer-events: none;
     transition: all 0.3s ease;
 }
-.scroll-up-btn.show{
+
+.scroll-up-btn.show {
     bottom: 30px;
     opacity: 1;
     pointer-events: auto;
@@ -94,36 +107,42 @@
 }
 
 /* estilos para seção da página inicial*/
-.home{
+.home {
     display: flex;
     background: url("images/banner.png") right;
     background-size: cover;
-    background-attachment: fixed; 
+    background-attachment: fixed;
     height: 100vh;
     color: #fff;
     min-height: 500px;
     font-family: "Ubunto", sans-serif;
 }
-.home .max-width{
+
+.home .max-width {
     margin: auto 0 auto 40px;
 }
-.home .home-content .text-1{
+
+.home .home-content .text-1 {
     font-size: 27px;
 }
-.home .home-content .text-2{
+
+.home .home-content .text-2 {
     font-size: 75px;
     font-weight: 600;
     margin-left: -3px;
 }
-.home .home-content .text-3{
+
+.home .home-content .text-3 {
     font-size: 40px;
     margin: 5px 0;
 }
-.home .home-content .text-3 span{
+
+.home .home-content .text-3 span {
     color: crimson;
     font-weight: 500;
 }
-.home .home-content a{
+
+.home .home-content a {
     display: inline-block;
     background: crimson;
     color: #fff;
@@ -133,31 +152,42 @@
     border-radius: 6px;
     border: 2px solid crimson;
 }
-.home .home-content a:hover{
-    color:crimson;
+
+.home .home-content a:hover {
+    color: crimson;
     background: none;
 }
 
 /* all similiar content styling code */
-section{
+section {
     padding: 100px 0;
 }
-.about, .about2, .about3, .about4, .services, .skills, .contact, footer{
+
+.about,
+.about2,
+.about3,
+.about4,
+.services,
+.skills,
+.contact,
+footer {
     font-family: "Poppins", sans-serif;
 }
+
 .about .about-content,
 .about2 .about2-content2,
 .about3 .about3-content3,
 .about4 .about4-content4,
 .services .serv-content,
 .skills .skills-content,
-.contact .contact-content{
+.contact .contact-content {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
 }
-section .title{
+
+section .title {
     position: relative;
     text-align: center;
     font-size: 40px;
@@ -166,7 +196,8 @@ section .title{
     padding-bottom: 20px;
     font-family: "Ubuntu", sans-serif;
 }
-section .title::before{
+
+section .title::before {
     content: "";
     position: absolute;
     bottom: 0px;
@@ -176,7 +207,8 @@ section .title::before{
     background: #111;
     transform: translateX(-50%);
 }
-section .title::after{
+
+section .title::after {
     position: absolute;
     bottom: -12px;
     left: 50%;
@@ -187,75 +219,99 @@ section .title::after{
     transform: translateX(-50%);
 }
 
-/* Mwsnagem Enviada Estilo */
+/* Mensagem Enviada Estilo */
+.mens_corp {
+    background-color: #292626;
+}
+
 .container {
-      margin: 100px auto;
-      max-width: 500px;
-      padding: 20px;
-      background-color: #ffffff;
-      border-radius: 5px;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    }
-    
-    h1 {
-      color: #333333;
-      margin-bottom: 10px;
-    }
-    
-    p {
-      color: #666666;
-      margin-bottom: 20px;
-    }
-    
-    a {
-      color: #0066cc;
-      text-decoration: none;
-    }
+    margin: 100px auto;
+    max-width: 500px;
+    padding: 20px;
+    background-color: #111;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: rgb(238, 122, 14);
+    text-align: center;
+    font-family: "Ubuntu", sans-serif;
+    margin-bottom: 20px;
+}
+
+p {
+    color: #fff;
+    font-family: "Ubuntu", sans-serif;
+    margin-bottom: 20px;
+}
+
+a {
+    color: crimson;
+    font-family: "Ubuntu", sans-serif;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+a:hover {
+    color: crimson;
+    background: none;
+}
 
 /* estilizando Projeto 001 */
 .about {
     color: #fff;
     background: #111;
 }
-.about .title::before{
+
+.about .title::before {
     background: #fff;
 }
-.about .title::after{
+
+.about .title::after {
     background: #111;
     content: "projeto 001";
 }
-.about .about-content .left{
+
+.about .about-content .left {
     width: 45%;
 }
-.about .about-content .left img{
+
+.about .about-content .left img {
     height: 450px;
     width: 450px;
     object-fit: cover;
     border-radius: 30px;
 }
-.about .about-content .right{
+
+.about .about-content .right {
     width: 55%;
 }
-.about .about-content .right .text{
+
+.about .about-content .right .text {
     color: white;
     font-size: 25px;
     font-weight: 600;
     margin-bottom: 10px;
 }
-.about .about-content .right p{
+
+.about .about-content .right p {
     color: white;
     margin-bottom: 5px;
     text-align: justify;
 }
-.about .about-content .right h2{
+
+.about .about-content .right h2 {
     color: white;
     margin-bottom: 5px;
     text-align: justify;
 }
-.about .about-content .right .text2{
+
+.about .about-content .right .text2 {
     margin-top: 20px;
 }
-.about .about-content .right a{
+
+.about .about-content .right a {
     display: inline-block;
     background: crimson;
     color: #fff;
@@ -268,12 +324,13 @@ section .title::after{
     border: 2px solid crimson;
     transition: all 0.3s ease;
 }
-.about .about-content .right a:hover{
+
+.about .about-content .right a:hover {
     color: crimson;
     background: none;
 }
 
-.about .about-content .right .a1{
+.about .about-content .right .a1 {
     display: inline-block;
     background: crimson;
     color: #fff;
@@ -286,7 +343,8 @@ section .title::after{
     border: 2px solid crimson;
     transition: all 0.3s ease;
 }
-.about .about-content .right .a1:hover{
+
+.about .about-content .right .a1:hover {
     color: crimson;
     background: none;
 }
@@ -296,46 +354,55 @@ section .title::after{
     color: #fff;
     background: #111;
 }
-.about2 .title::before{
+
+.about2 .title::before {
     background: #fff;
 }
-.about2 .title::after{
+
+.about2 .title::after {
     background: #111;
     content: "projeto 002";
 }
-.about2 .about2-content2 .left{
+
+.about2 .about2-content2 .left {
     width: 45%;
 }
-.about2 .about2-content2 .left img{
+
+.about2 .about2-content2 .left img {
     height: 450px;
     width: 450px;
     object-fit: cover;
     border-radius: 30px;
 }
-.about2 .about2-content2 .right{
+
+.about2 .about2-content2 .right {
     width: 55%;
 }
-.about2 .about2-content2 .right .text{
+
+.about2 .about2-content2 .right .text {
     color: white;
     font-size: 25px;
     font-weight: 600;
     margin-bottom: 10px;
 }
-.about2 .about2-content2 .right .p1{
+
+.about2 .about2-content2 .right .p1 {
     color: white;
     margin-bottom: 5px;
     text-align: justify;
 }
 
-.about2 .about2-content2 .right h2{
+.about2 .about2-content2 .right h2 {
     color: white;
     margin-bottom: 5px;
     text-align: justify;
 }
-.about2 .about2-content2 .right .text2{
+
+.about2 .about2-content2 .right .text2 {
     margin-top: 20px;
 }
-.about2 .about2-content2 .right .a1{
+
+.about2 .about2-content2 .right .a1 {
     display: inline-block;
     background: crimson;
     color: #fff;
@@ -348,7 +415,8 @@ section .title::after{
     border: 2px solid crimson;
     transition: all 0.3s ease;
 }
-.about2 .about2-content2 .right .a1:hover{
+
+.about2 .about2-content2 .right .a1:hover {
     color: crimson;
     background: none;
 }
@@ -358,46 +426,55 @@ section .title::after{
     color: #fff;
     background: #111;
 }
-.about3 .title::before{
+
+.about3 .title::before {
     background: #fff;
 }
-.about3 .title::after{
+
+.about3 .title::after {
     background: #111;
     content: "projeto 003";
 }
-.about3 .about3-content3 .left{
+
+.about3 .about3-content3 .left {
     width: 45%;
 }
-.about3 .about3-content3 .left img{
+
+.about3 .about3-content3 .left img {
     height: 350px;
     width: 450px;
-    object-fit:fill;
+    object-fit: fill;
     border-radius: 10px;
 }
-.about3 .about3-content3 .right{
+
+.about3 .about3-content3 .right {
     width: 55%;
 }
-.about3 .about3-content3 .right .text{
+
+.about3 .about3-content3 .right .text {
     color: white;
     font-size: 25px;
     font-weight: 600;
     margin-bottom: 10px;
 }
-.about3 .about3-content3 .right .p1{
+
+.about3 .about3-content3 .right .p1 {
     color: white;
     margin-bottom: 5px;
     text-align: justify;
 }
 
-.about3 .about3-content3 .right h2{
+.about3 .about3-content3 .right h2 {
     color: white;
     margin-bottom: 5px;
     text-align: justify;
 }
-.about3 .about3-content3 .right .text2{
+
+.about3 .about3-content3 .right .text2 {
     margin-top: 20px;
 }
-.about3 .about3-content3 .right .a1{
+
+.about3 .about3-content3 .right .a1 {
     display: inline-block;
     background: crimson;
     color: #fff;
@@ -410,7 +487,8 @@ section .title::after{
     border: 2px solid crimson;
     transition: all 0.3s ease;
 }
-.about3 .about3-content3 .right .a1:hover{
+
+.about3 .about3-content3 .right .a1:hover {
     color: crimson;
     background: none;
 }
@@ -420,46 +498,55 @@ section .title::after{
     color: #fff;
     background: #111;
 }
-.about4 .title::before{
+
+.about4 .title::before {
     background: #fff;
 }
-.about4 .title::after{
+
+.about4 .title::after {
     background: #111;
     content: "projeto 004";
 }
-.about4 .about4-content4 .left{
+
+.about4 .about4-content4 .left {
     width: 45%;
 }
-.about4 .about4-content4 .left img{
+
+.about4 .about4-content4 .left img {
     height: 350px;
     width: 450px;
-    object-fit:fill;
+    object-fit: fill;
     border-radius: 10px;
 }
-.about4 .about4-content4 .right{
+
+.about4 .about4-content4 .right {
     width: 55%;
 }
-.about4 .about4-content4 .right .text{
+
+.about4 .about4-content4 .right .text {
     color: white;
     font-size: 25px;
     font-weight: 600;
     margin-bottom: 10px;
 }
-.about4 .about4-content4 .right .p1{
+
+.about4 .about4-content4 .right .p1 {
     color: white;
     margin-bottom: 5px;
     text-align: justify;
 }
 
-.about4 .about4-content4 .right h2{
+.about4 .about4-content4 .right h2 {
     color: white;
     margin-bottom: 5px;
     text-align: justify;
 }
-.about4 .about4-content4 .right .text2{
+
+.about4 .about4-content4 .right .text2 {
     margin-top: 20px;
 }
-.about4 .about4-content4 .right .a1{
+
+.about4 .about4-content4 .right .a1 {
     display: inline-block;
     background: crimson;
     color: #fff;
@@ -472,51 +559,59 @@ section .title::after{
     border: 2px solid crimson;
     transition: all 0.3s ease;
 }
-.about4 .about4-content4 .right .a1:hover{
+
+.about4 .about4-content4 .right .a1:hover {
     color: crimson;
     background: none;
 }
 
 
 /* footer section styling */
-footer{
+footer {
     background: #111;
     padding: 20px 23px;
     color: #fff;
     text-align: center;
 }
-footer span a{
+
+footer span a {
     color: crimson
 }
-footer span a{
+
+footer span a {
     color: crimson;
     text-decoration: none;
 }
-footer span a:hover{
+
+footer span a:hover {
     text-decoration: underline;
 }
-.social{
+
+.social {
     justify-content: center;
-	display: flex;
+    display: flex;
 }
-.social a{
-	width: 45px;
-	height: 45px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	background:  #f9004d;
-	border-radius: 50%;
-	margin: 22px 10px;
-	color: white;
-	text-decoration: none;
-	font-size: 20px;
+
+.social a {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f9004d;
+    border-radius: 50%;
+    margin: 22px 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
 }
-.social a:hover{
-	transform: scale(1.3);
-	transition: .3s;
+
+.social a:hover {
+    transform: scale(1.3);
+    transition: .3s;
 }
-.rede{
+
+.rede {
     font-weight: 600;
     font-size: 25px;
     font-family: "Ubuntu", sans-serif;
@@ -524,45 +619,50 @@ footer span a:hover{
 
 /* responsive media query start */
 @media (max-width: 1300px) {
-    .home .max-width{
+    .home .max-width {
         margin-left: 0px;
     }
 }
 
 @media (max-width: 1104px) {
-    .about .about-content .left img{
+    .about .about-content .left img {
         height: 350px;
         width: 350px;
     }
-    .about2 .about2-content2 .left img{
+
+    .about2 .about2-content2 .left img {
         height: 350px;
         width: 350px;
     }
-    .about3 .about3-content3 .left img{
+
+    .about3 .about3-content3 .left img {
         height: 350px;
         width: 350px;
     }
-    .about4 .about4-content4 .left img{
+
+    .about4 .about4-content4 .left img {
         height: 350px;
         width: 350px;
     }
 }
 
-@media (max-width:991px){
-    .max-width{
+@media (max-width:991px) {
+    .max-width {
         padding: 0 50px;
     }
 }
 
-@media (max-width: 947px){
-    .menu-btn{
+@media (max-width: 947px) {
+    .menu-btn {
         display: block;
         z-index: 999;
     }
-    .menu-btn i.active:before{
+
+    .menu-btn i.active:before {
         content: "\f00d";
     }
-    .navbar .menu{
+
+    .navbar .menu {
         position: fixed;
         height: 100vh;
         width: 100%;
@@ -573,91 +673,113 @@ footer span a:hover{
         padding-top: 80px;
         transition: all 0.3s ease;
     }
-    .navbar .menu.active{
+
+    .navbar .menu.active {
         left: 0;
     }
-    .navbar .menu li{
+
+    .navbar .menu li {
         display: block;
     }
-    .navbar .menu li a{
+
+    .navbar .menu li a {
         display: inline-block;
         margin: 20px 0;
         font-size: 25px;
     }
-    .home .home-content .text-2{
+
+    .home .home-content .text-2 {
         font-size: 70px;
     }
-    .home .home-content .text-3{
+
+    .home .home-content .text-3 {
         font-size: 35px;
     }
-    .home .home-content a{
+
+    .home .home-content a {
         font-size: 23px;
         padding: 10px 30px;
     }
 
-    .max-width{
+    .max-width {
         max-width: 800px;
-    }    
-    .about .about-content .column{
+    }
+
+    .about .about-content .column {
         width: 100%;
     }
-    .about .about-content .left{
+
+    .about .about-content .left {
         display: flex;
         justify-content: center;
         margin: 0 auto 60px;
     }
-    .about .about-content .right{
+
+    .about .about-content .right {
         flex: 100%;
     }
-    .about2 .about2-content2 .column{
+
+    .about2 .about2-content2 .column {
         width: 100%;
     }
-    .about2 .about2-content2 .left{
+
+    .about2 .about2-content2 .left {
         display: flex;
         justify-content: center;
         margin: 0 auto 60px;
     }
-    .about2 .about2-content2 .right{
+
+    .about2 .about2-content2 .right {
         flex: 100%;
     }
-    .about3 .about3-content3 .column{
+
+    .about3 .about3-content3 .column {
         width: 100%;
     }
-    .about3 .about3-content3 .left{
+
+    .about3 .about3-content3 .left {
         display: flex;
         justify-content: center;
         margin: 0 auto 60px;
     }
-    .about3 .about3-content3 .right{
+
+    .about3 .about3-content3 .right {
         flex: 100%;
     }
-    .about4 .about4-content4 .column{
+
+    .about4 .about4-content4 .column {
         width: 100%;
     }
-    .about4 .about4-content4 .left{
+
+    .about4 .about4-content4 .left {
         display: flex;
         justify-content: center;
         margin: 0 auto 60px;
     }
-    .about4 .about4-content4 .right{
+
+    .about4 .about4-content4 .right {
         flex: 100%;
     }
-    .services .serv-content .card{
+
+    .services .serv-content .card {
         width: calc(50% - 10px);
         margin-bottom: 20px;
     }
+
     .skills .skills-content .column,
-    .contact .contact-content .column{
+    .contact .contact-content .column {
         width: 100%;
         margin-bottom: 35px;
     }
-    .social{
+
+    .social {
         display: flex;
     }
-    .social a{
+
+    .social a {
         width: 45px;
-        height: 45px;      
-        background:  #f9004d;
+        height: 45px;
+        background: #f9004d;
         border-radius: 50%;
         color: white;
         text-decoration: none;
@@ -666,34 +788,39 @@ footer span a:hover{
 }
 
 @media (max-width: 690px) {
-    .max-width{
+    .max-width {
         padding: 0 23px;
     }
-    .home .home-content .text-2{
+
+    .home .home-content .text-2 {
         font-size: 60px;
     }
-    .home .home-content .text-3{
+
+    .home .home-content .text-3 {
         font-size: 32px;
     }
-    .home .home-content a{
+
+    .home .home-content a {
         font-size: 20px;
     }
+
     .services .serv-content .card,
-    .skills .skills-content .columns{
-        width: 100%;       
+    .skills .skills-content .columns {
+        width: 100%;
     }
 }
 
 @media (max-width: 500px) {
-    .home .home-content .text-2{
+    .home .home-content .text-2 {
         font-size: 50px;
     }
-    .home .home-content .text-3{
+
+    .home .home-content .text-3 {
         font-size: 27px;
     }
 }
-.home .home-content a{
+
+.home .home-content a {
     display: inline-block;
     background: crimson;
 }
-
