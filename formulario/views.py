@@ -1,21 +1,34 @@
 from django.shortcuts import render
-from django.core.mail import send_mail
 from django.core.mail import EmailMessage
 from django.conf import settings
 from django.http import HttpResponseRedirect
 
 def enviar_mensagem(request):
-  if request.method == 'POST':
-    nome = request.POST['nome']
-    email = request.POST['email']
-    assunto = request.POST['assunto']
-    mensagem = request.POST['mensagem']
-    send_mail (assunto, mensagem, 'settings.EMAIL_HOST_USER',[email], fail_silently = False)
-    return render(request, 'mensagem_enviada.html')
-    
-  return render(request, 'index.html')
-   
-    
+    if request.method == 'POST':
+        nome = request.POST['nome']
+        email = request.POST['email']
+        assunto = request.POST['assunto']
+        mensagem = request.POST['mensagem']
+
+        # Configuração do e-mail
+        remetente = email  # Usando o e-mail do remetente como o remetente do e-mail
+        destinatario_host = 'augustodomingosvasco@gmail.com' 
+
+        email_remessa_host = EmailMessage(
+            assunto,
+            f"Mensagem de {nome}\n\n{mensagem}",
+            remetente,
+            [destinatario_host],
+            reply_to=[remetente]
+        )
+
+        # Envio do e-mail para mim
+        email_remessa_host.send()
+
+        return render(request, 'mensagem_enviada.html')
+
+    return render(request, 'index.html')
+
     
 # Requisição para as paginas dentro da pasta Template
 def projetos_python(request):
@@ -29,3 +42,4 @@ def projetos_web(request):
 
 def projetos_django(request):
   return render(request, 'projetos-django.html')
+  
