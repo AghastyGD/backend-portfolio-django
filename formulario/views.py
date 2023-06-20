@@ -10,7 +10,7 @@ def enviar_mensagem(request):
     email = request.POST['email']
     assunto = request.POST['assunto']
     mensagem = request.POST['mensagem']
-    send_mail ('Contacto', mensagem, 'settings.EMAIL_HOST_USER',[email], fail_silently = False)
+    send_mail (assunto, mensagem, 'settings.EMAIL_HOST_USER',[email], fail_silently = False)
     return render(request, 'mensagem_enviada.html')
     
   return render(request, 'index.html')
