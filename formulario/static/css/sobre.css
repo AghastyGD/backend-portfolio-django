@@ -219,6 +219,36 @@ section .title::after {
     transform: translateX(-50%);
 }
 
+
+/* SlideShow das Imagens */
+.slideshow {
+    width: 100%;
+    max-width: 450px;
+    height: 450px;
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto;
+}
+
+.slideshow img {
+    width: 100%;
+    height: auto;
+    animation: slide 10s infinite;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 1s ease;
+    border-radius: 30px;
+    
+}
+
+.slideshow img.active{
+    opacity: 1;
+}
+
+
+
 /* Mensagem Enviada Estilo */
 .mens_corp {
     background-color: #292626;
